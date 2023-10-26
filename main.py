@@ -8,7 +8,7 @@ def board_load():
     # Δημιουργία ενός παραθύρου
     window = tk.Tk()
     window.title("Tic-Tac-Toe")
-    window.geometry("1000x603")  # Ορίζουμε το μέγεθος του παραθύρου σε 600x600 πίξελ
+    window.geometry("1000x603")  
 
     # Δημιουργία Canvas για τις γραμμές
     canvas = tk.Canvas(window, width=1000, height=604)
@@ -16,10 +16,10 @@ def board_load():
 
 
     # Γραμμές παιχνιδίου αρχή(x1, y1) τέλος(x2, y2) 
-    canvas.create_line(200, 0, 200, 600, width=3)  # Κάθετη γραμμή στο 1/3 του πλάτους
-    canvas.create_line(400, 0, 400, 600, width=3)  # Κάθετη γραμμή στο 2/3 του πλάτους
-    canvas.create_line(0, 200, 600, 200, width=3)  # Οριζόντια γραμμή στο 1/3 του ύψους
-    canvas.create_line(0, 400, 600, 400, width=3)  # Οριζόντια γραμμή στο 2/3 του ύψους
+    canvas.create_line(200, 0, 200, 600, width=3) 
+    canvas.create_line(400, 0, 400, 600, width=3)  
+    canvas.create_line(0, 200, 600, 200, width=3)  
+    canvas.create_line(0, 400, 600, 400, width=3)  
 
     #'Όρια παιχνιδιού
     canvas.create_line(600, 0, 600, 600, width=3)  # Όρια παιχνιδιου δεξια
